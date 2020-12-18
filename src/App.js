@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { Fragment, useState } from "react"
 import './App.css';
+import Books from "./Components/Books";
+import Footer from "./Components/Footer";
+import Genre from "./Components/Genre";
+import Header from "./Components/Header";
+import Heading from "./Components/Heading";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+  const [book1, setBook1] = useState(null)
+  const [book2, setBook2] = useState(null)
+  return(
+    <Fragment>
+      <Header/>
+      <Heading/>
+      <Genre setBook1={setBook1} setBook2={setBook2}/>
+      {book1 && <Books book1={book1} book2={book2}/>}
+      <Footer/>
+    </Fragment> 
+  )
 }
 
 export default App;

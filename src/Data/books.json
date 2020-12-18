@@ -1,0 +1,27 @@
+[
+    {
+        "genre": "Action",
+        "a": "Life of Pi",
+        "b": "The Three Musketeers"
+    },
+    {
+        "genre": "Comic",
+        "a": "The Walking Dead: Compendium One",
+        "b": "The Boy, the Mole, the Fox and the Horse"
+    },
+    {
+        "genre": "Horror",
+        "a": "Carrie",
+        "b": "The Haunting of Hill House"
+    },
+    {
+        "genre": "Mystery",
+        "a": "The Adventures of Sherlock Holmes",
+        "b": "The Night Fire"
+    },
+    {
+        "genre": "Scifi",
+        "a": "The Testaments",
+        "b": "1984"
+    }
+]
